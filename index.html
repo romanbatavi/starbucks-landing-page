@@ -13,8 +13,8 @@
         <div class="circle"></div>
         <header>
             <a href="#" class="logo"><img src="/images/logo.png"></a>
-            <div class="toggle"></div>
-            <ul>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigator">
                 <li><a href="#">Home</a>
                 <li><a href="#">Menu</a>
                 <li><a href="#">What's New</a>
@@ -61,6 +61,13 @@
         function gantiWarna(warna) {
             const circle = document.querySelector('.circle');
             circle.style.background = warna;
+        }
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var navigator = document.querySelector('.navigator')
+            menuToggle.classList.toggle('active')
+            navigator.classList.toggle('active')
         }
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
