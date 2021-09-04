@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbuck Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <section>
@@ -31,7 +32,7 @@
                     representation of the United States' second wave of coffee culture.</p>
                     <a href="#">Learn More</a>
             </div>
-            <div class="imgBox">
+            <div data-aos="fade-left" class="imgBox">
                 <img src="/images/img1.png" alt="Green" class="starbucks">
             </div>
         </div>
@@ -56,6 +57,10 @@
             const circle = document.querySelector('.circle');
             circle.style.background = warna;
         }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
